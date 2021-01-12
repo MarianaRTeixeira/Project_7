@@ -11,6 +11,7 @@
     grid-template-columns: 1fr minmax(100px, 1fr);
     
 }
+
 /* HEADER */
 
 header {
@@ -85,9 +86,27 @@ header h3 {
     border-radius: 5%;
     color: white;
 }
+/* MAIN */
 
+.main {
+    grid-area: main;
+}
 
-
+.main-header {
+    display:flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    
+}
+.headline {
+    padding-right: 10px;
+    padding-left: 10px;
+    color: blue;
+}
+.main-header .headline{
+    
+    color: #939393;
+}
 /* MEDIA QUERIES */
 @media( min-width: 768px){
     .grid-container{
