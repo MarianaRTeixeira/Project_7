@@ -131,7 +131,7 @@ input {
 
 .alert {
     display: flex;
-    background-color: #7277b9;
+    background-color: #6969ba;
     color: white;
     border-radius: 5px;
     margin-left: 10px;
@@ -143,6 +143,7 @@ input {
     float: right;
     margin-right: -125px;
 }
+
 /* ***************** */
 /* Line graph charts */
 /* ***************** */
@@ -153,19 +154,19 @@ input {
     padding-right: 10px;
     padding-left: 10px;
     color: #939393;
-    font-size: 16px;
-    margin: 15px;
-
+    font-size: 18px;
+    margin: 15px  0 15px  15px;
 }
 
+/* .traffic-header h3{
+    font-size: 16px;
+} */
 .traffic-nav {
     display: flex;
-    justify-content: space-around;
-    padding-right: 10px;
+    justify-content: flex-end;
     padding-left: 10px;
     color: #939393;
     font-size: 24px;
-    margin: 15px;
 }
 
 ul{
@@ -173,10 +174,21 @@ ul{
     list-style-type: none;
 }
 
-.traffic-nav-link{
-    padding: 0 10px;
+.traffic-nav-link {
+    padding: 5px 20px 5px 20px; 
+    font-size: 20px;
+    margin-right: 0;
+    border-radius: 50px;
+   
 }
 
+
+.traffic-nav-link.active {
+    background-color: #52c681;
+    color: white; 
+    padding-top:5px;
+    padding-bottom: 5px;
+}
 /* ************* */
 /* MEDIA QUERIES */
 /* ************* */
@@ -217,5 +229,6 @@ ul{
 
     #alert{
         padding-left: 10px;
+        margin-left: 25px;
     }
 }
