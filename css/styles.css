@@ -141,7 +141,8 @@ input {
 
 #x {
     float: right;
-    margin-right: -125px;
+    margin-left: 300px;
+   
 }
 
 /* ***************** */
@@ -230,5 +231,6 @@ ul{
     #alert{
         padding-left: 10px;
         margin-left: 25px;
+        font-size: 18px;
     }
 }
