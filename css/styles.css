@@ -149,6 +149,10 @@ input {
 /* Line graph charts */
 /* ***************** */
 
+.traffic {
+    padding: 10px 0;
+}
+
 .traffic-header {
     display: flex;
     justify-content: space-between;
@@ -157,6 +161,7 @@ input {
     color: #939393;
     font-size: 18px;
     margin: 15px  0 15px  15px;
+    
 }
 
 .traffic-nav {
@@ -167,7 +172,7 @@ input {
     font-size: 24px;
 }
 
-ul{
+ul {
     display: inline;
     list-style-type: none;
 }
@@ -190,8 +195,14 @@ ul{
 /* Daily graph charts */
 /* ****************** */
 
-.daily{
+.daily h3,
+.mobile h3 {
     display: flex;
+    padding-right: 10px;
+    padding-left: 10px;
+    color: #939393;
+    text-transform: uppercase;
+
 }
 
 .widget-container-half {
@@ -199,6 +210,18 @@ ul{
     padding-bottom: 15px;
     margin: 0;
 }
+
+.daily.widget-container-half{
+    display: flex;
+    align-self: left;
+
+ }
+ .mobile.widget-container-half {
+     display: flex;
+    align-self: right;
+ }
+
+
 /* ************* */
 /* MEDIA QUERIES */
 /* ************* */
@@ -224,11 +247,12 @@ ul{
         padding-left: 10px;
         margin-left: 25px;
     }
+    
     .widget-container-half {
         width: 50%;
         display: inline-block;
     }
-
+ 
 } 
 
 @media( min-width: 1024px){
@@ -238,7 +262,7 @@ ul{
         "header header"
         "sidebar main";
     }
-
+    
     
 
 } 

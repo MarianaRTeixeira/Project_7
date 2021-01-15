@@ -1,8 +1,10 @@
 const traffic = document.getElementById('traffic-chart').getContext('2d');
-var daily = document.getElementById('daily-chart').getContext('2d');
+const dailyCanvas = document.getElementById('daily-chart');
+const mobileCanvas = document.getElementById('mobile-chart');
 
 
-var first = new Chart(traffic, {
+// TRAFFIC CHART
+var firstGraph = new Chart(traffic, {
     // The type of chart we want to create
     type: 'line',
 
@@ -36,4 +38,73 @@ var first = new Chart(traffic, {
     }
 } )
 
-// var second = new Chart(daily, {
+// DAILY CHART
+const dailyData = new Chart(dailyCanvas, {
+    // The type of chart we want to create 
+    type: 'bar',
+
+    // The data for our dataset
+    data: {
+        labels: ["S","M","T","W","T","F","S"],
+        datasets: [{
+            label: "# of hits",
+            data: [75, 115, 175, 125, 225, 200, 100],
+            backgroundColor: '#7477bf',
+            borderWidth: 1
+        }]
+    },
+
+    // Configuration options go here
+    
+    options: {
+        
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero: true
+                }
+            }]
+        },
+        legend: {
+            display: false
+        }
+        
+    }
+})
+
+// MOBILE CHART
+const mobileData = new Chart(mobileCanvas, {
+     // The type of chart we want to create 
+    type: 'doughnut',
+    
+    // The data for our dataset
+    data: {
+        labels: ["Desktop", "Tablet", "Phones"],
+        datasets: [{
+            label: "# of Users",
+            data: ['2000', '550', '500'],
+            borderWidth: 0,
+            backgroundColor: [
+                '#7477bf',
+                '#78cf82',
+                '51b6c8'
+            ]
+    }],
+
+     // Configuration options go here
+     options: {
+        
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero: true
+                }
+            }]
+        },
+        legend: {
+            display: false
+        }
+        
+    }
+    }
+})
