@@ -202,7 +202,6 @@ ul {
     padding-left: 10px;
     color: #939393;
     text-transform: uppercase;
-
 }
 
 .widget-container-half {
@@ -211,16 +210,15 @@ ul {
     margin: 0;
 }
 
-.daily.widget-container-half{
-    display: flex;
-    align-self: left;
 
- }
- .mobile.widget-container-half {
-     display: flex;
-    align-self: right;
- }
-
+ .daily .widget-container-half{
+    float: left;
+    padding-right: 0;
+}
+.mobile .widget-container-half{
+    float: right;
+    padding-left: 0;
+}
 
 /* ************* */
 /* MEDIA QUERIES */
@@ -248,11 +246,14 @@ ul {
         margin-left: 25px;
     }
     
-    .widget-container-half {
+    .widget-container-half,
+    .widget-container-half{
         width: 50%;
         display: inline-block;
+        
     }
  
+    
 } 
 
 @media( min-width: 1024px){
@@ -264,5 +265,4 @@ ul {
     }
     
     
-
 } 

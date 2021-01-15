@@ -103,6 +103,9 @@ const mobileData = new Chart(mobileCanvas, {
         },
         legend: {
             display: false
+        },
+        label: {
+            display: false
         }
         
     }
