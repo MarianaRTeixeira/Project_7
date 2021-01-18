@@ -2,7 +2,7 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 400;
-    
+   
 }
 
 .grid-container {
@@ -216,6 +216,7 @@ section.mobile {
     border-right: 1px solid black;
     border-bottom: 1px solid black;
 }
+
 /* ************* */
 /* SOCIAL STATUS */
 /* ************* */
@@ -236,16 +237,7 @@ section.mobile {
 
 }
 
-.social-wrapper{
-    display: inline-flex;
-    flex-direction: row;
-    background-color: #939393;
-    margin: auto;
-    /* width: 30%; */
-    
-   
 
-}
 /* ************* */
 /* MEDIA QUERIES */
 /* ************* */
@@ -294,11 +286,6 @@ section.mobile {
         "sidebar main";
     }
     
-    /* .widget-container-half{
-        width: 50%;
-        display: inline-block;
-        border-bottom: 1px solid grey;
-    }  */
-    
+
     
 } 

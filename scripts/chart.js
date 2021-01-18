@@ -93,21 +93,13 @@ const mobileData = new Chart(mobileCanvas, {
 
      // Configuration options go here
      options: {
-        
-        scales: {
-            yAxes: [{
-                ticks: {
-                    beginAtZero: true
-                }
-            }]
-        },
         legend: {
-            display: false
-        },
-        label: {
-            display: false
-        }
-        
+            display:true,
+          
+            label: {
+                position: 'right',
+            }
+             }    
     }
     }
 })
