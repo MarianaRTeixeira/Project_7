@@ -197,29 +197,55 @@ ul {
 
 .daily h3,
 .mobile h3 {
-    display: flex;
+    
+    padding-right: 10px;
+    padding-left: 10px;
+    color: #939393;
+    text-transform: uppercase;
+} 
+
+.graph-container {
+    display: inline-flex;
+}
+
+section.daily,
+section.mobile {
+    padding-left: 5px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+/* ************* */
+/* SOCIAL STATUS */
+/* ************* */
+
+.social-container h3 {
     padding-right: 10px;
     padding-left: 10px;
     color: #939393;
     text-transform: uppercase;
 }
 
-.widget-container-half {
-    width: 100%;
-    padding-bottom: 15px;
-    margin: 0;
+.logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #7478ba;
+    margin: auto;
+
 }
 
+.social-wrapper{
+    display: inline-flex;
+    flex-direction: row;
+    background-color: #939393;
+    margin: auto;
+    /* width: 30%; */
+    
+   
 
- .daily .widget-container-half{
-    float: left;
-    padding-right: 0;
 }
-.mobile .widget-container-half{
-    float: right;
-    padding-left: 0;
-}
-
 /* ************* */
 /* MEDIA QUERIES */
 /* ************* */
@@ -231,7 +257,13 @@ ul {
         "header header"
         "sidebar main";
     }
+    .widget-container-full{
+        width: 90vw;
+    }
 
+    .widget-container-half{
+        width: 45vw;
+    }
     .sidebar{
         flex-direction: column;
         justify-content: flex-start;
@@ -246,16 +278,14 @@ ul {
         margin-left: 25px;
     }
     
-    .widget-container-half,
-    .widget-container-half{
-        width: 50%;
-        display: inline-block;
-        
+    .daily, .members, .message {
+        grid-column: 1 / span 1;
     }
- 
-    
-} 
-
+   
+    .mobile, .activity, .settings {
+        grid-column: 1 / span 2;
+    }
+}
 @media( min-width: 1024px){
     .grid-container{
         grid-template-columns: 55px 1fr;
@@ -263,6 +293,12 @@ ul {
         "header header"
         "sidebar main";
     }
+    
+    /* .widget-container-half{
+        width: 50%;
+        display: inline-block;
+        border-bottom: 1px solid grey;
+    }  */
     
     
 } 
