@@ -404,10 +404,7 @@
     text-transform: uppercase;
   }
   
-  .members,
-  .activity {
-    flex-basis: 50%;
-  }
+ 
   
   @media (min-width: 768px) {
     .grid-container {
