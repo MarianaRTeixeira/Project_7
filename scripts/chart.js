@@ -23,6 +23,7 @@ var firstGraph = new Chart(traffic, {
 
     // Configuration options go here
     options: {
+        maintainAspectRatio: true,
         scales: {
             yAxes: [{
                 ticks: {
