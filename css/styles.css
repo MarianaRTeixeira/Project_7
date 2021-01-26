@@ -214,12 +214,14 @@ header h3 {
 }
 
 .traffic-nav {
+  
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
 
 .traffic-nav-link {
+  flex-direction: column;
   padding: 5px 20px 5px 20px;
   font-size: 18px;
   margin-right: 0;
