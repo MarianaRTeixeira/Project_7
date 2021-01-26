@@ -14,6 +14,9 @@
       integrity="sha512-d9xgZrVZpmmQlfonhQUvTR7lMPtO7NkZMkA0ABN3PHCbKA5nqylQ/yWlFAyY6hYgdF1Qh6nYiuADWwKB4C2WSw=="
       crossorigin="anonymous"
     ></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
   </head>
   <body class="grid-container">
     <!--HEADER-->
@@ -28,7 +31,7 @@
           class="bell-icn"
           alt="bell notification"
         />
-
+        <div class="green-dot"></div>
         <!--Container element for our notifications-->
         <div id="notifications"></div>
 
@@ -66,16 +69,9 @@
       </div>
 
       <!-- Alert Banner -->
-      <div class="alert-banner" id="alert">
-        <p>
-          <strong>Alert</strong>: You have <strong>6</strong> overdue tasks to
-          complete
-        </p>
-        <!-- <span class="alert-banner-close">X</span> -->
-        <!-- still miss -->
-
-        <!-- JS will insert alert here  still miss the js for close when clicked-->
-      </div>
+       <div class="alert-banner" id="alert">
+        <!-- JS will insert alert here  still miss the js for close when clicked -->
+      </div> 
 
       <!--Line graph charts-->
 
@@ -104,7 +100,7 @@
             <canvas id="daily-chart" height="150"></canvas>
           </div>
         </section>
-        <div class="vertical"></div>
+       
         <!-- Doughnut graph -->
         <section class="mobile">
           <h3>Mobile</h3>
@@ -115,7 +111,7 @@
         </section>
       </div>
 
-      <hr />
+    
 
       <!-- Social Status -->
       <div class="social-container">
