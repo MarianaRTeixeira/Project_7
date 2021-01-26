@@ -341,7 +341,9 @@ header h3 {
 
   }
  
-  
+  .traffic-header{
+    flex-direction: row;
+  }
 /* 
   .social-container {
     flex-direction: row;
