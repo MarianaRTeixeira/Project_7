@@ -207,6 +207,7 @@ header h3 {
 }
 
 .traffic-header {
+  flex-direction: column;
   display: flex; 
   justify-content: space-between;
   /* border: 1px solid blue; */

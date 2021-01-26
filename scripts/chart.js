@@ -23,7 +23,6 @@ var firstGraph = new Chart(traffic, {
 
     // Configuration options go here
     options: {
-
         scales: {
             yAxes: [{
                 ticks: {
@@ -35,7 +34,6 @@ var firstGraph = new Chart(traffic, {
             display: false
         },
         responsive: true
-
     }
 })
 
