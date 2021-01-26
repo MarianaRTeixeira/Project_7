@@ -35,17 +35,17 @@ hr {
 }
 
 header {
-  display: grid;
+  /* display: grid; */
   grid-area: header;
 }
 
 nav {
-  display: grid;
+  /* display: grid; */
   grid-area: navigation;
 }
 
 main {
-  display: grid;
+  /* display: grid; */
   grid-area: main;
 }
 
@@ -145,6 +145,7 @@ header h3 {
 /* *********** */
 /* MAIN HEADER */
 /* *********** */
+
 .main-header {
   display: flex;
   flex-direction: row;
@@ -236,11 +237,7 @@ header h3 {
   padding-bottom: 5px;
 }
 
-.widget-container-full {
-  width: 100%;
-  padding-left: 2em;
-  margin-right: 0;
-}
+
 
 /* *********************************** */
 /*  GRAPH COMPONENT - DAILY AND MOBILE */
