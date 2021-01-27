@@ -72,9 +72,9 @@ let trafficOptions = {
             },
             responsive: true,
             layout: {
-                padding: 50,
-
-            }
+                padding: 40,
+                
+            },
     }
 
     let dailyChart =  new Chart(dailyCanvas, {
