@@ -21,7 +21,7 @@ hr {
 
 .grid-container {
   display: grid;
-  grid-template-columns: 100%;
+  grid-template-columns: auto;
   grid-template-rows: auto;
   grid-template-areas:
     "header"
@@ -44,11 +44,10 @@ nav {
   grid-area: navigation;
 }
 
-main {
-  /* display: grid; */
+.main {
+  
   grid-area: main;
 }
-
 /* ****** */
 /* HEADER */
 /* ****** */
@@ -246,17 +245,123 @@ header h3 {
 /*  GRAPH COMPONENT - DAILY AND MOBILE */
 /* *********************************** */
 
-.daily h3,
-.mobile h3 {
+.graph-headline {
+  margin: 20px;
+  color: #939393;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.vertical {
+  border: 1px solid #f5f5f5;
+}
+
+/* ************************ */
+/*  SOCIAL STATUS CONTAINER */
+/* ************************ */
+
+.full_social_wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding-bottom: 2em;
+}
+
+.social-container h3 {
   padding: 10px;
   color: #939393;
   font-size: 18px;
   text-transform: uppercase;
 }
 
+.social-wrapper {
+  display: flex;
+  border: 1px solid #dedede;
+  margin-left: 0.6em;
+  flex-basis: 20%;
+  padding-top: 1em;
+  justify-content: center;
+  min-width: 30%;
+  background-color: #fbfbfb;
+  border-radius: 5px;
+}
+
+.logo_twitter,
+.logo_facebook,
+.logo_google {
+  display: block;
+  width: 80px;
+  height: 80px;
+  padding: 25px;
+}
+
+.social-image {
+  margin-bottom: 10px;
+  background-color: #6969ba;
+  border-radius: 50%;
+}
+.social-text {
+  margin-left: 1em;
+}
+.social-text p {
+  color: #6969ba;
+  font-size: 20px;
+}
+
+p.numbers {
+  color: grey;
+  font-size: 40px;
+}
+
+/* ******************* */
+/*  NEW MEMBERS WIDGET */
+/* ******************* */
+
+
+.members h3, .activity h3 {
+    padding: 10px;
+    color: #939393;
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+
+
+.profile-image{
+    width: 80px;
+    height: 80px;
+    float: left;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.members-text {
+   padding-left: 10px;
+   padding-top: 1em;
+   line-height: 1.5;
+   color: #939393;
+    font-size: 18px;
+}
+
+.members-text a {
+    font-size: 16px;
+    color:#6969ba; 
+}
+
+.date {
+    color: #939393;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-top: 2em;
+    padding-left: 2em;
+ 
+}
+
 /* ************** */
 /*  MEDIA QUERIES */
 /* ************** */
+
+
+
 @media (min-width: 768px) {
   .grid-container {
     grid-template-columns: 55px 1fr;
@@ -296,20 +401,21 @@ header h3 {
       grid-template-columns: 50%;
     }
     
-    .main-header,
+   .main-header,
     .alert-banner,
     .traffic,
-    .social-container {
+    .social-container,
+    .full_social_wrapper {
       grid-column: 1 / span 2;
     }
 
-    .daily,
-    .members,
-    .message {
+   .daily,
+  .members,
+   .message {
       grid-column: 1 / span 1;
     }
 
-    .mobile,
+   .mobile,
     .activity,
     .settings {
       grid-column: 2 / span 1;
@@ -333,27 +439,44 @@ header h3 {
     justify-content: space-between;
   }
 
-  
-
   .graph-container {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    margin-top: 1em;
+    border-top: 1px solid #f5f5f5;
+    border-bottom: 1px solid #f5f5f5;
 
   }
  
   .traffic-header{
     flex-direction: row;
   }
-/* 
+
   .social-container {
     flex-direction: row;
     padding: 1em;
+    border-bottom: 1px solid #f5f5f5;
   }
 
   .full_social_wrapper {
-    /* display: flex; 
+    display: flex;
     justify-content: space-between;
     flex-direction: row;
-    padding-bottom: 1em;
-  } */
+    padding-bottom: 2em;
+  }
+.members {
+  display: flex;
+  flex-direction: column;
+  grid-template-columns: 1 /span 1;
+  border: 1px solid black;
+  
+}
+  
+.activity {
+  display: flex;
+  flex-direction: column;
+  grid-template-columns: 2 / span 1;
+}
+  
 }
