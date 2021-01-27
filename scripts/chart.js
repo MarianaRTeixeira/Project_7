@@ -34,7 +34,7 @@ let trafficOptions = {
     layout: {
         padding: {
             left: 50,
-            right: 0,
+            right: 5,
             top: 0,
             bottom: 0
         }
