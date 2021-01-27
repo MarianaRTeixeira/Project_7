@@ -49,6 +49,9 @@ main {
   grid-area: main;
 }
 
+.main {
+  display: grid;
+}
 
 /* ****** */
 /* HEADER */
@@ -402,7 +405,7 @@ p.numbers {
 
     .main {
       
-      grid-template-columns: 50% 50%;
+      grid-template-columns: 50%;
     }
     
    .main-header,
