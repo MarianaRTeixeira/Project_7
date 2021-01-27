@@ -337,35 +337,57 @@ p.numbers {
   text-transform: uppercase;
 }
 
-.profile-image {
-  width: 80px;
-  height: 80px;
-  float: left;
-  border-radius: 50%;
-  margin: 10px;
+.members-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    margin-right: 1em;
+    margin-left:1em;
+    border-top: 1px dotted lightgrey;
+}
+
+.profile-image { 
+    width: 80px;
+    height: 80px;
+    float: left;
+    border-radius: 50%;
+    margin: 5px;
 }
 
 .members-text {
-  padding-left: 10px;
-  padding-top: 1em;
-  line-height: 1.5;
-  color: #939393;
+   padding-left: 10px;
+   padding-top: 1em;
+   line-height: 1.5;
+   color: #939393;
   font-size: 18px;
 }
 
 .members-text a {
-  font-size: 16px;
-  color: #6969ba;
+    font-size: 16px;
+    color:#6969ba; 
 }
 
-.date {
-  color: #939393;
-  font-size: 18px;
-  text-transform: uppercase;
-  margin-top: 2em;
-  padding-left: 2em;
+.date,
+.arrow {
+    color: #939393;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-top: 2em;
+    padding-left: 2em;
+ 
 }
 
+/* **************** */
+/*  ACTIVITY WIDGET */
+/* **************** */
+
+.activity {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  margin-right: 1em;
+  margin-left:1em;
+  border-top: 1px dotted lightgrey;
+  justify-items: start;
+}
 /* ************** */
 /*  MEDIA QUERIES */
 /* ************** */
