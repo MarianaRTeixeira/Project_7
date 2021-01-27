@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/toggle.css" />
 
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"
@@ -94,7 +95,7 @@
         </div>
       </section>
       <!-- <hr> -->
-      <!-- <div class="graph-container"> -->
+      
       <!-- Bar graph -->
       <section class="daily">
         <h3>Daily Traffic</h3>
@@ -112,7 +113,7 @@
           <canvas id="mobile-chart"></canvas>
         </div>
       </section>
-      <!-- </div> -->
+  
 
       <!-- Social Status -->
       <div class="social-container">
@@ -293,10 +294,11 @@
             alt="Profile images"
           />
           <div class="members-text">
-            <p>Victoria Chambers comment on YouApps's SEO Tips</p>
+            <p class="member-p">Victoria Chambers comment on YouApps's SEO Tips</p>
+            <p class="hour">4 hours ago</p>
           </div>
-          <p>4 hours ago</p>
           <p class="arrow">&gt;</p>
+          
         </div>
 
         <div class="members-container">
@@ -306,9 +308,24 @@
             alt="Profile images"
           />
           <div class="members-text">
-            <p>Dale comment on Facebook changes</p>
+            <p class="member-p">Dale comment on Facebook changes</p>
+            <p class="hour">5 hours ago</p>
           </div>
-          <p>5 hours ago</p>
+          
+          <p class="arrow">&gt;</p>
+        </div>
+
+        <div class="members-container">
+          <img
+            src="images/member-2.jpg"
+            class="profile-image"
+            alt="Profile images"
+          />
+          <div class="members-text">
+            <p class="member-p">Dale comment on twitter changes</p>
+            <p class="hour">7 hours ago</p>
+          </div>
+          
           <span class="arrow">&gt;</span>
         </div>
 
@@ -319,22 +336,10 @@
             alt="Profile images"
           />
           <div class="members-text">
-            <p>Dale comment on twitter changes</p>
+            <p class="member-p">Dan comment on twitter changes</p>
+            <p class="hour">1 day ago</p>
           </div>
-          <p>7 hours ago</p>
-          <span class="arrow">&gt;</span>
-        </div>
-
-        <div class="members-container">
-          <img
-            src="images/member-2.jpg"
-            class="profile-image"
-            alt="Profile images"
-          />
-          <div class="members-text">
-            <p>Dan comment on twitter changes</p>
-          </div>
-          <p>1 day ago</p>
+          
           <span class="arrow">&gt;</span>
         </div>
       </section>
@@ -363,9 +368,19 @@
       <!-- <hr> -->
 
       <!--Local settings widget-->
-      <section>
+      <section class="settings">
         <h3>Settings</h3>
         <!--custom CSS toggle code-->
+        <label class="toggleSwitch large" onclick="">
+          <input type="checkbox" checked />
+          <span>
+              <span>OFF</span>
+              <span>ON</span>
+              Send email notifications
+          </span>
+          <a></a>
+      </label>
+  
         <!--custom CSS toggle code-->
 
         <select class="form-field" id="timezone">
