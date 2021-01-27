@@ -49,9 +49,7 @@ main {
   grid-area: main;
 }
 
-.main {
-  display: grid;
-}
+
 /* ****** */
 /* HEADER */
 /* ****** */
@@ -63,6 +61,7 @@ main {
   justify-content: space-between;
   padding: 5px 10px;
   grid-area: header;
+  border: 1px solid 
 }
 
 .header-wrapper {
@@ -402,7 +401,8 @@ p.numbers {
 
 
     .main {
-      grid-template-columns: 50%;
+      
+      grid-template-columns: 50% 50%;
     }
     
    .main-header,
