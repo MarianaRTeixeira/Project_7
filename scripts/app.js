@@ -9,7 +9,7 @@ to complete</p>
       <p class="alert-banner-close">X</p>
        
     </div>
-`;
+`
 
 
 alertBanner.addEventListener ( 'click', e =>{
@@ -21,18 +21,18 @@ alertBanner.addEventListener ( 'click', e =>{
 }); 
 
 
-// ​const​ user = ​document​.getElementById(​"userField"​); ​
-// const​ message = ​document​.getElementById(​"messageField"​); 
-// ​const​ send = ​document​.getElementById(​"send"​);
+const user = document.getElementById("userField");
+const message = document.getElementById("messageField");
+const send = document.getElementById("send");
 
-// send.addEventListener(​'click'​, () => {
-//     if(user.value === "" && message.value === "") {
-//         alert("please fill out user field and message fields before sending");
-//     } else if (user.value === ""){
-//         alert("please fill out user field");
-//     } else if (message.value === ""){
-//         alert("please fill out message field");
-//     } else {
-//         alert (`Message successfully sent to:`)
-//     }
-//     ​})
+send.addEventListener( 'click', () => {
+  if(user.value === "" && message.value === "") {
+        alert("please fill out user field and message fields before sending");
+    } else if (user.value === ""){
+        alert("please fill out user field");
+    } else if (message.value === ""){
+        alert("please fill out message field");
+    } else {
+        alert (`Message successfully sent to:`)
+    }
+    });
