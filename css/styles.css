@@ -157,7 +157,6 @@ header h3 {
 
 .main-header {
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
 }
 
@@ -484,6 +483,11 @@ p.numbers {
     grid-template-columns: 50%;
   }
 
+  .main-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
   .main-header,
   .alert-banner,
   .traffic,
