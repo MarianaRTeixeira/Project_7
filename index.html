@@ -8,7 +8,7 @@
 
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="css/toggles.css" />
+    <link rel="stylesheet" href="css/toggle-switch.css" />
 
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"
@@ -369,7 +369,31 @@
       <section class="settings">
         <h3>Settings</h3>
         <!--custom CSS toggle code-->
-      
+      <div class="switch">
+        <label class="switch-light switch-ios" onclick="">
+          <input type="checkbox">
+        
+          <p class="toggle-text">Send email notifications </p>
+          <span>
+            <span>Off</span>
+            <span>On</span>
+            <a></a>
+          </span>
+        </label>
+      </div>
+      <div class="switch">
+        <label class="switch-light switch-ios" onclick="">
+          <input type="checkbox">
+        
+          <p class="toggle-text">Sent profile to public </p>
+          <span>
+            <span>Off</span>
+            <span>On</span>
+            <a></a>
+          </span>
+        </label>
+      </div>
+
         <!--custom CSS toggle code-->
           
         <select class="form-field" id="timezone">
