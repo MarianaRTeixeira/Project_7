@@ -474,31 +474,28 @@ p.numbers {
 }
 .settings-button{
   display: flex;
-  margin-left: 1em;
-  margin-right: 1em;
-   margin-top: 1em;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+  margin-top: 60px;
+  
   justify-content: space-between;
+ 
 }
 
 .switch{
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-content: space-between;
-  padding: 10px;
+  grid-template-columns: 4fr 1fr;
+  justify-content: center;
+  padding: 15px;
+ 
 }
 
 .toggle-text {
   padding: 5px;
   color: #939393;
   font-size: 16px;
-  
 }
 
-.slider{
-  
-  width: 100px;
-  grid-template-columns: 2 /span 1;
-}
 
 /* ************** */
 /*  MEDIA QUERIES */
@@ -632,5 +629,11 @@ p.numbers {
   .button-disabled {
     width: 48%;
   }
+
+  .form-field{
+   margin-top: 3em;
+   
+  }
+  
   
 }
