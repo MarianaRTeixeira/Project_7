@@ -481,13 +481,24 @@ p.numbers {
 }
 
 .switch{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.toggle-text {
+  padding: 5px;
+  color: #939393;
+  font-size: 16px;
+  
+}
+
+.slider{
+  
   width: 100px;
+  grid-template-columns: 2 /span 1;
 }
-
-.toggle-text{
-  color: blueviolet
-}
-
 
 /* ************** */
 /*  MEDIA QUERIES */
