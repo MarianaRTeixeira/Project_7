@@ -630,24 +630,20 @@ p.numbers {
     border-right: 1px solid #f5f5f5;
     margin-bottom: 20px;
   }
-/* 
+
    .settings-button .button-primary{
     width: 48%;
   
-  } */
+  }
 
-  /* .button-disabled {
+  .button-disabled {
     width: 48%;
-  } */
+  }
 
   .form-field{
    margin-top: 3em;
-
-   
-    margin-left: 1em;
-    
-  }
    
   }
   
   
+}

@@ -33,7 +33,7 @@ let trafficOptions = {
     responsive: true,
     layout: {
         padding: {
-            left: 50,
+            left: 20,
             right: 5,
             top: 0,
             bottom: 0
@@ -67,12 +67,16 @@ let trafficOptions = {
                 }
             }]
         },
-            legend: {
+        legend: {
                 display: false
-            },
-            responsive: true,
-            layout: {
-                padding: 40,
+        },
+        responsive: true,
+        layout: {
+            padding: {
+                left:10
+
+            }
+            
                 
             },
     }
@@ -102,17 +106,16 @@ let trafficOptions = {
     const mobileOptions = {
         legend: {
             
-                display: true,
-                position: 'right',
-                label: {
-                   boxWidth: 20,
-                   fontStyle: 'bold'
-                
+            display: true,
+            position: 'right',
+            label: {
+            boxWidth: 20,
+            fontStyle: 'bold'   
             }
         },
         responsive: true,
             layout: {
-                padding: 40,
+                padding: 10,
         
             }
     }
