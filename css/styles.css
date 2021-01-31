@@ -25,17 +25,6 @@
   }
 }
 
-/* @keyframes slide {
-	50% {
-		transform: translate3d(0,-10px,0);
-	}
-	80% {
-		transform: translate3d(0,10px,0);
-	}
-	100% {
-		transform: translate3d(0,0,0);
-	}
-}  */
 
 /* ********* */
 /* Structure */
@@ -45,7 +34,6 @@
   box-sizing: border-box;
   font-family: "Raleway", sans-serif;
   font-weight: 400;
-  font-size: 18px;
   margin: 0;
 }
 
@@ -73,12 +61,10 @@ hr {
 }
 
 header {
-  /* display: grid; */
   grid-area: header;
 }
 
 nav {
-  /* display: grid; */
   grid-area: navigation;
 }
 
@@ -114,7 +100,6 @@ h3 {
 
 .header-wrapper {
   display: flex;
-  float: right;
   align-items: center;
   justify-content: space-between;
 }
@@ -130,6 +115,10 @@ header h3 {
   font-size: 20px;
 }
 
+.user_name {
+  display: none;
+}
+
 .member_img {
   border-radius: 50%;
   width: 50px;
@@ -143,8 +132,8 @@ header h3 {
   justify-content: space-between;
   padding-right: 10px;
   border-right: 1px solid #5c63b9;
-  /* missing animation */
 }
+
 .bell-icn:hover {
   transform-origin: center top;
   animation: bell 0.6s forwards;
@@ -158,8 +147,9 @@ header h3 {
   position: relative;
   top: -15px;
   left: -15px;
-  /* missing animation */
+ 
 }
+
 
 /* ****************** */
 /* SIDEBAR NAVIGATION */
@@ -203,7 +193,6 @@ header h3 {
 }
 
 .main-header h2 {
-  padding-right: 10px;
   color: #939393;
   font-size: 26px;
   margin: 15px;
@@ -213,7 +202,7 @@ header h3 {
   background-color: #fbfbfb;
   border: 1px solid #e5e5e5;
   padding-top: 15px;
-  padding-right: 10px;
+  padding-left: 10px;
   padding-bottom: 15px;
   width: 100%;
 }
@@ -227,7 +216,7 @@ header h3 {
   margin-top: 15px;
   margin-bottom: 15px;
 }
-/* !NEED HELP */
+
 .alert-banner p {
   font-size: 20px;
   margin-left: 15px;
@@ -268,20 +257,17 @@ header h3 {
 
 .traffic-nav {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-around;
   align-items: center;
+  padding-left: 0;
 }
-
+ 
 .traffic-nav-link {
-  flex-direction: column;
-  padding: 5px 20px 5px 20px;
-  font-size: 18px;
+  font-size: 16px;
+  padding: 10px;
   margin-right: 0;
   border-radius: 50px;
-  display: flex;
-
   color: #939393;
-  font-size: 20px;
   text-transform: uppercase;
 }
 
@@ -381,10 +367,10 @@ p.numbers {
 }
 
 .members-container {
-  display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
-  margin-right: 1em;
-  margin-left: 1em;
+  display: flex;
+  justify-content: flex-start;
+  margin-right: 10px;
+  margin-left: 10px;
   border-top: 1px dotted lightgrey;
 }
 
@@ -401,22 +387,25 @@ p.numbers {
   padding-top: 1em;
   line-height: 1.5;
   color: #939393;
-  font-size: 18px;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
 }
 
 .members-text a {
-  font-size: 16px;
+  font-size: 12px;
   color: #6969ba;
 }
 
 .date,
 .arrow {
   color: #939393;
-  font-size: 18px;
+  font-size: 14px;
   text-transform: uppercase;
   margin-top: 2em;
-  padding-left: 4em;
+  margin-left: auto;
 }
+
 
 /* **************** */
 /*  ACTIVITY WIDGET */
@@ -454,7 +443,9 @@ p.numbers {
 
 .widget-container input {
   margin-top: 5px;
+  border: 1px solid #e5e5e5
 }
+
 .widget-container textarea {
   height: 150px;
   border: 1px solid #e5e5e5;
@@ -520,7 +511,7 @@ input [type="checkbox"] {
   display: flex;
   margin-left: 1.5em;
   margin-right: 1.5em;
-  margin-top: 60px;
+  margin-top: 70px;
 
   justify-content: space-between;
 }
@@ -562,11 +553,20 @@ input [type="checkbox"] {
   .sidebar {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: left;
     background-color: #4c4d6f;
+    min-height: 100vh;
     grid-area: navigation;
   }
+  canvas {
+    width: 100%;
+  }
 
+  .main-header h2 {
+    color: #939393;
+    font-size: 22px;
+    margin: 15px;
+  }
   .header-search {
     background-color: #fbfbfb;
     border: 1px solid #e5e5e5;
@@ -594,6 +594,7 @@ input [type="checkbox"] {
     flex-direction: row;
     justify-content: space-around;
   }
+
   .main-header,
   .alert-banner,
   .traffic,
@@ -621,9 +622,9 @@ input [type="checkbox"] {
   .widget-container-half {
     width: 45vw;
   }
-
-  .sidebar {
-    min-height: 100vh;
+ 
+  .user_name {
+    display: initial;
   }
 
   .alert-banner {
@@ -681,5 +682,14 @@ input [type="checkbox"] {
   .form-field {
     margin-top: 20px;
     margin-bottom: 5px;
+    border: 1px solid #e5e5e5
+  }
+}
+
+@media (min-width: 1024px){
+  textarea:hover,
+  input:hover,
+  .form-field:hover {
+    background: #D4D4D4;
   }
 }

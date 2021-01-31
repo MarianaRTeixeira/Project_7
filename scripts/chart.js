@@ -33,7 +33,7 @@ let trafficOptions = {
     responsive: true,
     layout: {
         padding: {
-            left: 20,
+            left: 40,
             right: 5,
             top: 0,
             bottom: 0
